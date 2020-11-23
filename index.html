@@ -8,14 +8,39 @@
     	body{
     		background-color: rgb(28,138,217);
     	}
+
+        h1{
+            text-align: center;
+            background-color: rgb(18,106,174);
+            font-family: "Snell Roundhand", cursive ;
+            font-size: 4em;
+        }
         
         .badge-organizer{
             background-color: rgb(24,118,189);
         }
+
+        #scroll-bar{
+            width: 1000px;
+            height: 680px;
+            overflow-y: auto;
+        }
+
+        #container{
+            width: 1000px;
+            margin: auto;
+        }
+
+        .center{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
     </style>
     <body>
-        <h1>Travel to Kanto!</h1>
-        <img src="images/kanto_HGSS.webp" alt="Kanto Region Map" width="1000">
+        <div id="container">
+        <h1>Welcome to Kanto</h1>
+        <img src="images/kanto_HGSS.webp" alt="Kanto Region Map" width="800" class="center">
         <h2>Description</h2>
         <p>Kanto is a lovely region with beautiful sights to see.<br>
         Visit the Pewter City museum and see ancient Pokemon Fossils.<br>
@@ -23,75 +48,94 @@
         Visit the Safari Zone in Fuchsia City, to catch rare and exotic Pokemon.<br>
         We're certain whereever you travel on the Island, you'll enjoy your time here. </p>
         
-        <h3>Indigo League Badge List</h3>
+        <div id="scroll-bar"><h3>Indigo League Badge List</h3>
         <ul>
             <div class="badge-organizer"><li>The Boulder Badge</li>
             	<ul>
             		<li TYPE="circle">Location: Pewter City Gym</li>
             		<li TYPE="circle">Gym Leader: Brock</li>
             	</ul>
-            		<img src="images/brock.webp" alt="Brock, hte Pewter City Gym Leader" height="300">
-            		<img src="images/boulder_badge.png" alt="Boulder Badge" height="150"></div>
+            		<img src="images/brock.webp" alt="Brock, hte Pewter City Gym Leader" height="250">
+            		<img src="images/boulder_badge.png" alt="Boulder Badge" height="100"></div>
 
             <li>The Cascade Badge</li>
             	<ul>
             		<li TYPE="circle">Location: Cerulean City</li>
             		<li TYPE="circle">Gym Leader: Misty (my wife)</li>
             	</ul>
-            		<img src="images/misty.webp" alt="Misty, the Cerulean City Gym Leader" height="300">
-            		<img src="images/cascade_badge.png" alt="Cascade Badge" height="150">
+            		<img src="images/misty.webp" alt="Misty, the Cerulean City Gym Leader" height="250">
+            		<img src="images/cascade_badge.png" alt="Cascade Badge" height="100">
 
             <div class="badge-organizer"><li>The Thunder Badge</li>
             	<ul>
             		<li TYPE="circle">Location: Vermillion City</li>
             		<li TYPE="circle">Gym Leader: Lt. Surge</li>
             	</ul>
-            	<img src="images/Lt_surge.png" alt="Lt. Surge, the Vermillion City Gym Leader" height="300">
-            	<img src="images/thunder_badge.png" alt="Thunder Badge" height="150"></div>
+            	<img src="images/Lt_surge.png" alt="Lt. Surge, the Vermillion City Gym Leader" height="250">
+            	<img src="images/thunder_badge.png" alt="Thunder Badge" height="100"></div>
 
 
             <li>The Rainbow Badge</li>
             	<ul>
             		<li TYPE="circle">Location: Celadon City</li>
             		<li TYPE="circle">Gym Leader: Erika</li>
-            		<img src="images/erika.webp" alt="Erika, the Celadon City Gym Leader" height="300">
-            		<img src="images/rainbow_badge.png" alt="Ranbow Badge" height="150">
+            		<img src="images/erika.webp" alt="Erika, the Celadon City Gym Leader" height="250">
+            		<img src="images/rainbow_badge.png" alt="Ranbow Badge" height="100">
             	</ul>
 
             <div class="badge-organizer"><li>The Soul Badge</li>
             	<ul>
             		<li TYPE="circle">Location: Fuchsia City</li>
             		<li TYPE="circle">Gym Leader: Koga</li>
-            		<img src="images/koga.webp" alt="Koga, the Fuchsia City Gym Leader" height="300">
-            		<img src="images/soul_badge.png" alt="Sould Badge" height="150">
+            		<img src="images/koga.webp" alt="Koga, the Fuchsia City Gym Leader" height="250">
+            		<img src="images/soul_badge.png" alt="Sould Badge" height="100">
             	</ul></div>
 
             <li>The Marsh Badge</li>
             	<ul>
             		<li TYPE="circle">Location: Saffron City</li>
             		<li TYPE="circle">Gym Leader: Sabrina</li>
-            		<img src="images/sabrina.webp" alt="Sabrina, the Saffron City Gym Leader" height="300">
-            		<img src="images/marsh_badge.png" alt="Marsh Badge" height="150">
+            		<img src="images/sabrina.webp" alt="Sabrina, the Saffron City Gym Leader" height="250">
+            		<img src="images/marsh_badge.png" alt="Marsh Badge" height="100">
             	</ul>
 
             <div class="badge-organizer"><li>The Volcano Badge</li>
             	<ul>
             		<li TYPE="circle">Location: Cinnabar Island</li>
             		<li TYPE="circle">Gym Leader: Blaine</li>
-            		<img src="images/blaine.webp" alt="Blaine, the Cinnabar Island Gym Leader" height="300">
-            		<img src="images/volcano_badge.png" alt="Volcano Badge" height="150">
+            		<img src="images/blaine.webp" alt="Blaine, the Cinnabar Island Gym Leader" height="250">
+            		<img src="images/volcano_badge.png" alt="Volcano Badge" height="100">
             	</ul></div>
 
             <li>The Earth Badge</li>
             	<ul>
             		<li TYPE="circle">Location: Viridian City</li>
             		<li TYPE="circle">Gym Leader: Giovanni</li>
-            		<img src="images/giovanni.webp" alt="Giovanni, the Viridian City Gym Leader" height="300">
-            		<img src="images/earth_badge.png" alt="Earth Badge" height="150">
+            		<img src="images/giovanni.webp" alt="Giovanni, the Viridian City Gym Leader" height="250">
+            		<img src="images/earth_badge.png" alt="Earth Badge" height="100">
             	</ul>
 
-        </ul>
-        
-        
+        </ul></div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        Read more on <a href="https://pokemon.fandom.com/wiki/Kanto">Pokemon Fandome Wiki</a>   
+        </div>
     </body>
 </html>
