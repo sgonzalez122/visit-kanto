@@ -16,20 +16,23 @@
             font-size: 4em;
         }
         
+        h3{
+            text-decoration: underline;
+            width: 330px;
+            font-size: 1.8em;
+            font-style: italic;
+        }
+
         .badge-organizer{
             background-color: rgb(24,118,189);
         }
 
         #scroll-bar{
-            width: 1000px;
-            height: 680px;
+            width: 1500px;
+            height: 640px;
             overflow-y: auto;
-        }
-
-        #container{
-            width: 1000px;
-            margin: auto;
-        }
+            border: 2px solid rgb(0,0,0);
+        }        
 
         .center{
             display: block;
@@ -38,7 +41,6 @@
         }
     </style>
     <body>
-        <div id="container">
         <h1>Welcome to Kanto</h1>
         <img src="images/kanto_HGSS.webp" alt="Kanto Region Map" width="800" class="center">
         <h2>Description</h2>
@@ -47,8 +49,12 @@
         Test your luck at the Celadon City Casino and win fabulous prizes.<br>
         Visit the Safari Zone in Fuchsia City, to catch rare and exotic Pokemon.<br>
         We're certain whereever you travel on the Island, you'll enjoy your time here. </p>
-        
-        <div id="scroll-bar"><h3>Indigo League Badge List</h3>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!--BADGE LIST-->
+        <h3>Indigo League Badge List:</h3><div id="scroll-bar">
         <ul>
             <div class="badge-organizer"><li>The Boulder Badge</li>
             	<ul>
@@ -136,6 +142,5 @@
         <br>
         <br>
         Read more on <a href="https://pokemon.fandom.com/wiki/Kanto">Pokemon Fandome Wiki</a>   
-        </div>
     </body>
 </html>
