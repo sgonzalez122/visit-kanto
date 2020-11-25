@@ -14,6 +14,8 @@
             background-color: rgb(18,106,174);
             font-family: "Snell Roundhand", cursive;
             font-size: 4em;
+            font-style: italic;
+            width: 1000px
         }
         
         h3{
@@ -41,7 +43,7 @@
         }
     </style>
     <body>
-        <h1>Welcome to Kanto</h1>
+        <h1 class="center">Welcome to Kanto</h1>
         <img src="images/kanto_HGSS.webp" alt="Kanto Region Map" width="800" class="center">
         <h2>Description</h2>
         <p>Kanto is a lovely region with beautiful sights to see.<br>
@@ -55,73 +57,195 @@
         <br>
         <!--BADGE LIST-->
         <h3>Indigo League Badge List:</h3><div id="scroll-bar">
-        <ul>
-            <div class="badge-organizer"><li>The Boulder Badge</li>
-            	<ul>
-            		<li TYPE="circle">Location: Pewter City Gym</li>
-            		<li TYPE="circle">Gym Leader: Brock</li>
-            	</ul>
-            		<img src="images/brock.webp" alt="Brock, hte Pewter City Gym Leader" height="250">
-            		<img src="images/boulder_badge.png" alt="Boulder Badge" height="100"></div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Badge</th>
+                        <th>Location</th>
+                        <th>Gym Leader</th>
+                        <th>Type Specialization</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--Brock-->
+                    <tr>
+                        <td>
+                            <img src="images/boulder_badge.png" alt="Boulder Badge" height="100">
+                            <br>
+                            Boulder Badge
+                        </td>
+                        <td>
+                            <!--Insert Town Picture later-->
+                            Pewter City Gym
+                        </td>
+                        <td>
+                            <img src="images/brock.webp" alt="Brock, the Pewter City Gym Leader" height="250">
+                            <br>
+                            Brock
+                        </td>
+                        <td>
+                            <!--Insert Type Icon Picture later-->
+                            Rock
+                        </td>
+                    </tr>
 
-            <li>The Cascade Badge</li>
-            	<ul>
-            		<li TYPE="circle">Location: Cerulean City</li>
-            		<li TYPE="circle">Gym Leader: Misty (my wife)</li>
-            	</ul>
-            		<img src="images/misty.webp" alt="Misty, the Cerulean City Gym Leader" height="250">
-            		<img src="images/cascade_badge.png" alt="Cascade Badge" height="100">
+                    <!--Misty-->
+                    <tr>
+                        <td>
+                            <img src="images/cascade_badge.png" alt="Cascade Badge" height="100">
+                            <br>
+                            Cascade Badge
+                        </td>
+                        <td>
+                            <!--Insert Town Picture later-->
+                            Cerulean City Gym
+                        </td>
+                        <td>
+                            <img src="images/misty.webp" alt="Misty, the Cerulean City Gym Leader" height="250">
+                            <br>
+                            Misty
+                        </td>
+                        <td>
+                            <!--Insert Type Icon Picture later-->
+                            Water
+                        </td>
+                    </tr>
 
-            <div class="badge-organizer"><li>The Thunder Badge</li>
-            	<ul>
-            		<li TYPE="circle">Location: Vermillion City</li>
-            		<li TYPE="circle">Gym Leader: Lt. Surge</li>
-            	</ul>
-            	<img src="images/Lt_surge.png" alt="Lt. Surge, the Vermillion City Gym Leader" height="250">
-            	<img src="images/thunder_badge.png" alt="Thunder Badge" height="100"></div>
+                    <!--Lt. Surge-->
+                    <tr>
+                        <td>
+                            <img src="images/thunder_badge.png" alt="Thunder Badge" height="100">
+                            <br>
+                            Thunder Badge
+                        </td>
+                        <td>
+                            <!--Insert Town Picture later-->
+                            Vermillion City Gym
+                        </td>
+                        <td>
+                            <img src="images/Lt_surge.png" alt="Lt. Surge, the Vermillion City Gym Leader" height="250">
+                            <br>
+                            Lt. Surge
+                        </td>
+                        <td>
+                            <!--Insert Type Icon Picture later-->
+                            Lightning
+                        </td>
+                    </tr>
 
+                    <!--Erika-->
+                    <tr>
+                        <td>
+                            <img src="images/rainbow_badge.png" alt="Ranbow Badge" height="100">
+                            <br>
+                            Rainbow Badge
+                        </td>
+                        <td>
+                            <!--Insert Town Picture later-->
+                            Celadon City Gym
+                        </td>
+                        <td>
+                            <img src="images/erika.webp" alt="Erika, the Celadon City Gym Leader" height="250">
+                            <br>
+                            Erika
+                        </td>
+                        <td>
+                            <!--Insert Type Icon Picture later-->
+                            Grass
+                        </td>
+                    </tr>
 
-            <li>The Rainbow Badge</li>
-            	<ul>
-            		<li TYPE="circle">Location: Celadon City</li>
-            		<li TYPE="circle">Gym Leader: Erika</li>
-            		<img src="images/erika.webp" alt="Erika, the Celadon City Gym Leader" height="250">
-            		<img src="images/rainbow_badge.png" alt="Ranbow Badge" height="100">
-            	</ul>
+                    <!--Koga-->
+                    <tr>
+                        <td>
+                            <img src="images/soul_badge.png" alt="Sould Badge" height="100">
+                            <br>
+                            Soul Badge
+                        </td>
+                        <td>
+                            <!--Insert Town Picture later-->
+                            Fuchsia City Gym
+                        </td>
+                        <td>
+                            <img src="images/koga.webp" alt="Koga, the Fuchsia City Gym Leader" height="250">
+                            <br>
+                            Koga
+                        </td>
+                        <td>
+                            <!--Insert Type Icon Picture later-->
+                            Poison
+                        </td>
+                    </tr>
 
-            <div class="badge-organizer"><li>The Soul Badge</li>
-            	<ul>
-            		<li TYPE="circle">Location: Fuchsia City</li>
-            		<li TYPE="circle">Gym Leader: Koga</li>
-            		<img src="images/koga.webp" alt="Koga, the Fuchsia City Gym Leader" height="250">
-            		<img src="images/soul_badge.png" alt="Sould Badge" height="100">
-            	</ul></div>
+                    <!--Sabrina-->
+                    <tr>
+                        <td>
+                            <img src="images/marsh_badge.png" alt="Marsh Badge" height="100">
+                            <br>
+                            Marsh Badge
+                        </td>
+                        <td>
+                            <!--Insert Town Picture later-->
+                            Saffron City Gym
+                        </td>
+                        <td>
+                            <img src="images/sabrina.webp" alt="Sabrina, the Saffron City Gym Leader" height="250">
+                            <br>
+                            Sabrina
+                        </td>
+                        <td>
+                            <!--Insert Type Icon Picture later-->
+                            Psychic
+                        </td>
+                    </tr>
 
-            <li>The Marsh Badge</li>
-            	<ul>
-            		<li TYPE="circle">Location: Saffron City</li>
-            		<li TYPE="circle">Gym Leader: Sabrina</li>
-            		<img src="images/sabrina.webp" alt="Sabrina, the Saffron City Gym Leader" height="250">
-            		<img src="images/marsh_badge.png" alt="Marsh Badge" height="100">
-            	</ul>
+                    <!--Blaine-->
+                    <tr>
+                        <td>
+                            <img src="images/volcano_badge.png" alt="Volcano Badge" height="100">
+                            <br>
+                            Volcano Badge
+                        </td>
+                        <td>
+                            <!--Insert Town Picture later-->
+                            Cinnabar Island Gym
+                        </td>
+                        <td>
+                            <img src="images/blaine.webp" alt="Blaine, the Cinnabar Island Gym Leader" height="250">
+                            <br>
+                            Blaine
+                        </td>
+                        <td>
+                            <!--Insert Type Icon Picture later-->
+                            Fire
+                        </td>
+                    </tr>
 
-            <div class="badge-organizer"><li>The Volcano Badge</li>
-            	<ul>
-            		<li TYPE="circle">Location: Cinnabar Island</li>
-            		<li TYPE="circle">Gym Leader: Blaine</li>
-            		<img src="images/blaine.webp" alt="Blaine, the Cinnabar Island Gym Leader" height="250">
-            		<img src="images/volcano_badge.png" alt="Volcano Badge" height="100">
-            	</ul></div>
+                    <!--Blue-->
+                    <tr>
+                        <td>
+                            <img src="images/earth_badge.png" alt="Earth Badge" height="100">
+                            <br>
+                            Earth Badge
+                        </td>
+                        <td>
+                            <!--Insert Town Picture later-->
+                            Viridian City Gym
+                        </td>
+                        <td>
+                            <img src="images/giovanni.webp" alt="Giovanni, the Viridian City Gym Leader" height="250">
+                            <br>
+                            Giovanni
+                        </td>
+                        <td>
+                            <!--Insert Type Icon Picture later-->
+                            Ground
+                        </td>
+                    </tr>
+                </tbody>
 
-            <li>The Earth Badge</li>
-            	<ul>
-            		<li TYPE="circle">Location: Viridian City</li>
-            		<li TYPE="circle">Gym Leader: Giovanni</li>
-            		<img src="images/giovanni.webp" alt="Giovanni, the Viridian City Gym Leader" height="250">
-            		<img src="images/earth_badge.png" alt="Earth Badge" height="100">
-            	</ul>
-
-        </ul></div>
+            </table>
+        </div>
         <br>
         <br>
         <br>
