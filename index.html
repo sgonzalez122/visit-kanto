@@ -1,270 +1,291 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Project: Travel webpage</title>
-    </head>
-    <style>
-    	body{
-    		background-color: rgb(28,138,217);
-    	}
 
-        h1{
-            text-align: center;
-            background-color: rgb(18,106,174);
-            font-family: "Snell Roundhand", cursive;
-            font-size: 4em;
-            font-style: italic;
-            width: 1000px
-        }
-        
-        h3{
-            text-decoration: underline;
-            width: 330px;
-            font-size: 1.8em;
-            font-style: italic;
-        }
+<head>
+    <meta charset="utf-8">
+    <title>Project: Travel webpage</title>
+</head>
+<style>
+    body {
+        background-color: rgb(28, 138, 217);
+        color:rgb(0, 0, 0);
+    }
 
-        .badge-organizer{
-            background-color: rgb(24,118,189);
-        }
+    h1 {
+        text-align: center;
+        background-color: rgb(18, 106, 174);
+        font-family: "Snell Roundhand", cursive;
+        font-size: 4em;
+        font-style: italic;
+        width: 1000px
+    }
 
-        #scroll-bar{
-            width: 1500px;
-            height: 640px;
-            overflow-y: auto;
-            border: 2px solid rgb(0,0,0);
-        }        
+    h3 {
+        text-decoration: underline;
+        width: 330px;
+        font-size: 1.8em;
+        font-style: italic;
+    }
 
-        .center{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    </style>
-    <body>
-        <h1 class="center">Welcome to Kanto</h1>
-        <img src="images/kanto_HGSS.webp" alt="Kanto Region Map" width="800" class="center">
-        <h2>Description</h2>
-        <p>Kanto is a lovely region with beautiful sights to see.<br>
+    #scroll-bar {
+        width: 1015px;
+        height: 640px;
+        overflow-y: auto;
+        border: 2px solid rgb(0, 0, 0);
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #badge_table, th, td{
+        border: 2px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        padding: 20px;
+        width: 1000px;
+    }
+
+    #badge_table th{
+        background-color: cornflowerblue;
+    }
+
+    #badge_table tr:nth-child(odd){
+        background-color:rgb(24, 118, 189);
+    }
+</style>
+
+<body>
+    <h1 class="center">Welcome to Kanto</h1>
+    <img src="images/kanto_HGSS.webp" alt="Kanto Region Map" width="800" class="center">
+    <h2>Description</h2>
+    <p>Kanto is a lovely region with beautiful sights to see.<br>
         Visit the Pewter City museum and see ancient Pokemon Fossils.<br>
         Test your luck at the Celadon City Casino and win fabulous prizes.<br>
         Visit the Safari Zone in Fuchsia City, to catch rare and exotic Pokemon.<br>
         We're certain whereever you travel on the Island, you'll enjoy your time here. </p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <!--BADGE LIST-->
-        <h3>Indigo League Badge List:</h3><div id="scroll-bar">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Badge</th>
-                        <th>Location</th>
-                        <th>Gym Leader</th>
-                        <th>Type Specialization</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!--Brock-->
-                    <tr>
-                        <td>
-                            <img src="images/boulder_badge.png" alt="Boulder Badge" height="100">
-                            <br>
-                            Boulder Badge
-                        </td>
-                        <td>
-                            <!--Insert Town Picture later-->
-                            Pewter City Gym
-                        </td>
-                        <td>
-                            <img src="images/brock.webp" alt="Brock, the Pewter City Gym Leader" height="250">
-                            <br>
-                            Brock
-                        </td>
-                        <td>
-                            <!--Insert Type Icon Picture later-->
-                            Rock
-                        </td>
-                    </tr>
+    <br>
+    <br>
+    <br>
+    <br>
 
-                    <!--Misty-->
-                    <tr>
-                        <td>
-                            <img src="images/cascade_badge.png" alt="Cascade Badge" height="100">
-                            <br>
-                            Cascade Badge
-                        </td>
-                        <td>
-                            <!--Insert Town Picture later-->
-                            Cerulean City Gym
-                        </td>
-                        <td>
-                            <img src="images/misty.webp" alt="Misty, the Cerulean City Gym Leader" height="250">
-                            <br>
-                            Misty
-                        </td>
-                        <td>
-                            <!--Insert Type Icon Picture later-->
-                            Water
-                        </td>
-                    </tr>
+    <!-- #region -->
+    <!-- (((BADGE LIST START))) -->
+    <h3>Indigo League Badge List:</h3>
+    <div id="scroll-bar">
+        <table id="badge_table">
+            <thead>
+                <tr>
+                    <th>Badge</th>
+                    <th>Location</th>
+                    <th>Gym Leader</th>
+                    <th>Type Specialization</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--Brock-->
+                <tr>
+                    <td>
+                        <img src="images/boulder_badge.png" alt="Boulder Badge" height="100">
+                        <br>
+                        Boulder Badge
+                    </td>
+                    <td>
+                        <!--Insert Town Picture later-->
+                        Pewter City Gym
+                    </td>
+                    <td>
+                        <img src="images/brock.webp" alt="Brock, the Pewter City Gym Leader" height="250">
+                        <br>
+                        Brock
+                    </td>
+                    <td>
+                        <!--Insert Type Icon Picture later-->
+                        Rock
+                    </td>
+                </tr>
 
-                    <!--Lt. Surge-->
-                    <tr>
-                        <td>
-                            <img src="images/thunder_badge.png" alt="Thunder Badge" height="100">
-                            <br>
-                            Thunder Badge
-                        </td>
-                        <td>
-                            <!--Insert Town Picture later-->
-                            Vermillion City Gym
-                        </td>
-                        <td>
-                            <img src="images/Lt_surge.png" alt="Lt. Surge, the Vermillion City Gym Leader" height="250">
-                            <br>
-                            Lt. Surge
-                        </td>
-                        <td>
-                            <!--Insert Type Icon Picture later-->
-                            Lightning
-                        </td>
-                    </tr>
+                <!--Misty-->
+                <tr>
+                    <td>
+                        <img src="images/cascade_badge.png" alt="Cascade Badge" height="100">
+                        <br>
+                        Cascade Badge
+                    </td>
+                    <td>
+                        <!--Insert Town Picture later-->
+                        Cerulean City Gym
+                    </td>
+                    <td>
+                        <img src="images/misty.webp" alt="Misty, the Cerulean City Gym Leader" height="250">
+                        <br>
+                        Misty
+                    </td>
+                    <td>
+                        <!--Insert Type Icon Picture later-->
+                        Water
+                    </td>
+                </tr>
 
-                    <!--Erika-->
-                    <tr>
-                        <td>
-                            <img src="images/rainbow_badge.png" alt="Ranbow Badge" height="100">
-                            <br>
-                            Rainbow Badge
-                        </td>
-                        <td>
-                            <!--Insert Town Picture later-->
-                            Celadon City Gym
-                        </td>
-                        <td>
-                            <img src="images/erika.webp" alt="Erika, the Celadon City Gym Leader" height="250">
-                            <br>
-                            Erika
-                        </td>
-                        <td>
-                            <!--Insert Type Icon Picture later-->
-                            Grass
-                        </td>
-                    </tr>
+                <!--Lt. Surge-->
+                <tr>
+                    <td>
+                        <img src="images/thunder_badge.png" alt="Thunder Badge" height="100">
+                        <br>
+                        Thunder Badge
+                    </td>
+                    <td>
+                        <!--Insert Town Picture later-->
+                        Vermillion City Gym
+                    </td>
+                    <td>
+                        <img src="images/Lt_surge.png" alt="Lt. Surge, the Vermillion City Gym Leader" height="250">
+                        <br>
+                        Lt. Surge
+                    </td>
+                    <td>
+                        <!--Insert Type Icon Picture later-->
+                        Lightning
+                    </td>
+                </tr>
 
-                    <!--Koga-->
-                    <tr>
-                        <td>
-                            <img src="images/soul_badge.png" alt="Sould Badge" height="100">
-                            <br>
-                            Soul Badge
-                        </td>
-                        <td>
-                            <!--Insert Town Picture later-->
-                            Fuchsia City Gym
-                        </td>
-                        <td>
-                            <img src="images/koga.webp" alt="Koga, the Fuchsia City Gym Leader" height="250">
-                            <br>
-                            Koga
-                        </td>
-                        <td>
-                            <!--Insert Type Icon Picture later-->
-                            Poison
-                        </td>
-                    </tr>
+                <!--Erika-->
+                <tr>
+                    <td>
+                        <img src="images/rainbow_badge.png" alt="Ranbow Badge" height="100">
+                        <br>
+                        Rainbow Badge
+                    </td>
+                    <td>
+                        <!--Insert Town Picture later-->
+                        Celadon City Gym
+                    </td>
+                    <td>
+                        <img src="images/erika.webp" alt="Erika, the Celadon City Gym Leader" height="250">
+                        <br>
+                        Erika
+                    </td>
+                    <td>
+                        <!--Insert Type Icon Picture later-->
+                        Grass
+                    </td>
+                </tr>
 
-                    <!--Sabrina-->
-                    <tr>
-                        <td>
-                            <img src="images/marsh_badge.png" alt="Marsh Badge" height="100">
-                            <br>
-                            Marsh Badge
-                        </td>
-                        <td>
-                            <!--Insert Town Picture later-->
-                            Saffron City Gym
-                        </td>
-                        <td>
-                            <img src="images/sabrina.webp" alt="Sabrina, the Saffron City Gym Leader" height="250">
-                            <br>
-                            Sabrina
-                        </td>
-                        <td>
-                            <!--Insert Type Icon Picture later-->
-                            Psychic
-                        </td>
-                    </tr>
+                <!--Koga-->
+                <tr>
+                    <td>
+                        <img src="images/soul_badge.png" alt="Sould Badge" height="100">
+                        <br>
+                        Soul Badge
+                    </td>
+                    <td>
+                        <!--Insert Town Picture later-->
+                        Fuchsia City Gym
+                    </td>
+                    <td>
+                        <img src="images/koga.webp" alt="Koga, the Fuchsia City Gym Leader" height="250">
+                        <br>
+                        Koga
+                    </td>
+                    <td>
+                        <!--Insert Type Icon Picture later-->
+                        Poison
+                    </td>
+                </tr>
 
-                    <!--Blaine-->
-                    <tr>
-                        <td>
-                            <img src="images/volcano_badge.png" alt="Volcano Badge" height="100">
-                            <br>
-                            Volcano Badge
-                        </td>
-                        <td>
-                            <!--Insert Town Picture later-->
-                            Cinnabar Island Gym
-                        </td>
-                        <td>
-                            <img src="images/blaine.webp" alt="Blaine, the Cinnabar Island Gym Leader" height="250">
-                            <br>
-                            Blaine
-                        </td>
-                        <td>
-                            <!--Insert Type Icon Picture later-->
-                            Fire
-                        </td>
-                    </tr>
+                <!--Sabrina-->
+                <tr>
+                    <td>
+                        <img src="images/marsh_badge.png" alt="Marsh Badge" height="100">
+                        <br>
+                        Marsh Badge
+                    </td>
+                    <td>
+                        <!--Insert Town Picture later-->
+                        Saffron City Gym
+                    </td>
+                    <td>
+                        <img src="images/sabrina.webp" alt="Sabrina, the Saffron City Gym Leader" height="250">
+                        <br>
+                        Sabrina
+                    </td>
+                    <td>
+                        <!--Insert Type Icon Picture later-->
+                        Psychic
+                    </td>
+                </tr>
 
-                    <!--Blue-->
-                    <tr>
-                        <td>
-                            <img src="images/earth_badge.png" alt="Earth Badge" height="100">
-                            <br>
-                            Earth Badge
-                        </td>
-                        <td>
-                            <!--Insert Town Picture later-->
-                            Viridian City Gym
-                        </td>
-                        <td>
-                            <img src="images/giovanni.webp" alt="Giovanni, the Viridian City Gym Leader" height="250">
-                            <br>
-                            Giovanni
-                        </td>
-                        <td>
-                            <!--Insert Type Icon Picture later-->
-                            Ground
-                        </td>
-                    </tr>
-                </tbody>
+                <!--Blaine-->
+                <tr>
+                    <td>
+                        <img src="images/volcano_badge.png" alt="Volcano Badge" height="100">
+                        <br>
+                        Volcano Badge
+                    </td>
+                    <td>
+                        <!--Insert Town Picture later-->
+                        Cinnabar Island Gym
+                    </td>
+                    <td>
+                        <img src="images/blaine.webp" alt="Blaine, the Cinnabar Island Gym Leader" height="250">
+                        <br>
+                        Blaine
+                    </td>
+                    <td>
+                        <!--Insert Type Icon Picture later-->
+                        Fire
+                    </td>
+                </tr>
 
-            </table>
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        Read more on <a href="https://pokemon.fandom.com/wiki/Kanto">Pokemon Fandome Wiki</a>   
-    </body>
+                <!--Blue-->
+                <tr>
+                    <td>
+                        <img src="images/earth_badge.png" alt="Earth Badge" height="100">
+                        <br>
+                        Earth Badge
+                    </td>
+                    <td>
+                        <!--Insert Town Picture later-->
+                        Viridian City Gym
+                    </td>
+                    <td>
+                        <img src="images/giovanni.webp" alt="Giovanni, the Viridian City Gym Leader" height="250">
+                        <br>
+                        Giovanni
+                    </td>
+                    <td>
+                        <!--Insert Type Icon Picture later-->
+                        Ground
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+    <!-- endregion -->
+    <!-- (((BADGE LIST END))) -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    Read more on <a href="https://pokemon.fandom.com/wiki/Kanto">Pokemon Fandome Wiki</a>
+</body>
+
 </html>
