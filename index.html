@@ -4,62 +4,42 @@
 <head>
     <meta charset="utf-8">
     <title>Project: Travel webpage</title>
+    <link rel="stylesheet" type="text/css" href="kanto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
 </head>
 <style>
-    body {
-        background-color: rgb(10, 105, 173);
-        color:rgb(0, 0, 0);
-    }
-
-    h1 {
-        text-align: center;
-        background-color: rgb(18, 106, 174);
-        font-family: "Snell Roundhand", cursive;
-        font-size: 4em;
-        font-style: italic;
-        width: 1000px
-    }
-
-    h3 {
-        text-decoration: underline;
-        width: 330px;
-        font-size: 1.8em;
-        font-style: italic;
-    }
-
-    #scroll-bar {
-        width: 1015px;
-        height: 640px;
-        overflow-y: auto;
-        border: 2px solid rgb(0, 0, 0);
-    }
-
-    .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #badge_table, th, td{
-        border: 2px solid black;
-        border-collapse: collapse;
-        text-align: center;
-        padding: 20px;
-        width: 1000px;
-    }
-
-    #badge_table th{
-        background-color: cornflowerblue;
-    }
-
-    #badge_table tr:nth-child(odd){
-        background-color:rgb(3, 85, 148);
+    .locations:nth-child(even){
+        background-color: rgb(3, 85, 148);
     }
 </style>
 
 <body>
     <h1 class="center">Welcome to Kanto</h1>
+    
+    <!--Navication Table-->
+    <table id="nav-tab" class="center"> 
+        <thead>
+            <tr>
+                <th><a href="#pallet-town">Pallet Town</a></th>
+                <th><a href="#pewter-city">Pewter City</a></th>
+                <th><a href="#cerulean-city">Cerulean City</a></th>
+                <th><a href="#vermillion-city">Vermillion City</a></th>
+                <th><a href="#celadon-city">Celadon City</a></th>
+                <th><a href="#fuchsia-city">Fuchsia City</a></th>
+                <th><a href="#saffron-city">Saffron City</a></th>
+                <th><a href="#cinnabar-island">Cinnabar Island</a></th>
+                <th><a href="#viridian-city">Viridian City</a></th>
+                <th><a href="#indigo-league">Indigo League</a></th>
+
+
+            </tr>
+        </thead>
+    </table>
+
+    <br>
     <img src="images/kanto_HGSS.webp" alt="Kanto Region Map" width="800" class="center">
+    
+    <section>
     <h2>Description</h2>
     <p>Kanto is a lovely region with beautiful sights to see.<br>
         Visit the Pewter City museum and see ancient Pokemon Fossils.<br>
@@ -68,11 +48,73 @@
         We're certain whereever you travel on the Island, you'll enjoy your time here. </p>
     <br>
     <br>
+    </section>
+
+    <section class="locations">
+        <h2 id="pallet-town">Pallet Town</h2>
+        <br>
+        <br>
+    </section>
+    
+    <section class="locations">
+        <h2 id="pewter-city">Pewter City</h2>
+        <br>
+        <br>
+    </section>
+    
+    <section class="locations">
+        <h2 id="cerulean-city">Cerulean City</h2>
+        <br>
+        <br>
+    </section>    
+
+    <section class="locations">
+        <h2 id="vermillion-city">Vermillion City</h2>
+        <br>    
+        <br>
+    </section>
+    
+    <section class="locations">
+        <h2 id="celadon-city">Celadon City</h2>
+        <br>
+        <br>
+    </section>
+
+    <section class="locations">
+        <h2 id="fuchsia-city">Fuchsia City</h2>
+        <br>
+        <br>
+    </section>
+
+    <section class="locations">
+        <h2 id="saffron-city">Saffron City</h2>
+        <br>
+        <br>
+    </section>
+
+    <section class="locations">
+        <h2 id="cinnabar-island">Cinnabar Island</h2>
+        <br>
+        <br>
+    </section>
+
+    <section class="locations">
+        <h2 id="viridian-city">Viridian City</h2>
+        <br>
+        <br>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <br>
     <br>
 
     <!-- #region -->
     <!-- (((BADGE LIST START))) -->
+    <h2 id="indigo-league">Indigo League</h2>
     <h3>Indigo League Badge List:</h3>
     <div id="scroll-bar">
         <table id="badge_table">
@@ -93,7 +135,8 @@
                         Boulder Badge
                     </td>
                     <td>
-                        <!--Insert Town Picture later-->
+                        <img src="images/pewter_city.png" alt="Pewter City Gym" width="300">
+                        <br>
                         Pewter City Gym
                     </td>
                     <td>
@@ -118,7 +161,8 @@
                         Cascade Badge
                     </td>
                     <td>
-                        <!--Insert Town Picture later-->
+                        <img src="images/cerulean_city.png" alt="Cerulean City Gym" width="300">
+                        <br>
                         Cerulean City Gym
                     </td>
                     <td>
@@ -143,7 +187,8 @@
                         Thunder Badge
                     </td>
                     <td>
-                        <!--Insert Town Picture later-->
+                        <img src="images/vermillion_city.png" alt="Vermillion City Gym" width="300">
+                        <br>
                         Vermillion City Gym
                     </td>
                     <td>
@@ -168,7 +213,8 @@
                         Rainbow Badge
                     </td>
                     <td>
-                        <!--Insert Town Picture later-->
+                        <img src="images/celadon_city.png" alt="Celadon City Gym" width="300">
+                        <br>
                         Celadon City Gym
                     </td>
                     <td>
@@ -193,7 +239,8 @@
                         Soul Badge
                     </td>
                     <td>
-                        <!--Insert Town Picture later-->
+                        <img src="images/fuchsia_city.png" alt="Fuchsia City Gym" width="300">
+                        <br>
                         Fuchsia City Gym
                     </td>
                     <td>
@@ -218,7 +265,8 @@
                         Marsh Badge
                     </td>
                     <td>
-                        <!--Insert Town Picture later-->
+                        <img src="images/saffron_city.png" alt="Saffron City Gym" width="300">
+                        <br>
                         Saffron City Gym
                     </td>
                     <td>
@@ -243,7 +291,8 @@
                         Volcano Badge
                     </td>
                     <td>
-                        <!--Insert Town Picture later-->
+                        <img src="images/cinnabar_island.png" alt="Cinnabar Island Gym" width="300">
+                        <br>
                         Cinnabar Island Gym
                     </td>
                     <td>
@@ -268,7 +317,8 @@
                         Earth Badge
                     </td>
                     <td>
-                        <!--Insert Town Picture later-->
+                        <img src="images/viridian_city.png" alt="Viridian City Gym" width="300">
+                        <br>
                         Viridian City Gym
                     </td>
                     <td>
@@ -288,6 +338,39 @@
     </div>
     <!-- endregion -->
     <!-- (((BADGE LIST END))) -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <br>
     <br>
     <br>
