@@ -1,0 +1,61 @@
+body {
+        background-color: rgb(10, 105, 173);
+        color:rgb(0, 0, 0);
+    }
+
+    h1 {
+        text-align: center;
+        background-color: rgb(3, 85, 148);
+        font-family: "Snell Roundhand", cursive;
+        font-size: 4em;
+        font-style: italic;
+        width: 1000px
+    }
+
+    #nav-tab{
+        border: 3px solid black;
+        border-collapse: collapse;
+        background-color: cornflowerblue;
+        text-align: center;
+        width: 1500px;
+    }
+
+    h3 {
+        text-decoration: underline;
+        width: 330px;
+        font-size: 1.8em;
+        font-style: italic;
+    }
+
+    #scroll-bar {
+        width: 1015px;
+        height: 640px;
+        overflow-y: auto;
+        border: 2px solid rgb(0, 0, 0);
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #badge_table, th, td{
+        border: 2px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        padding: 20px;
+        width: 1000px;
+    }
+
+    #badge_table th{
+        background-color: cornflowerblue;
+    }
+
+    #badge_table tr:nth-child(odd){
+        background-color:rgb(3, 85, 148);
+    }
+
+    a:link{
+        color: black;
+    }
